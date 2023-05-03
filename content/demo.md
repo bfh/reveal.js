@@ -11,12 +11,16 @@ details and [link to author](https://en.wikipedia.org/wiki/Author)
 ---
 ## 🧑‍🏫 .. 🤔 .. ⭐
 
-```md [|1|3-5|7-8|]
+```md [|1|3-5|7-9|11-12|]
 First section and statement
 
 Second section 
 - with details 
 - and arguments
+
+Another section 
+- with more details 
+- and additional arguments
 
 Closing section with 
 precise final take away
@@ -32,6 +36,12 @@ precise final take away
 --
 ## and arguments
 ---
+# Another section
+--
+## with details
+--
+## and arguments
+---
 # Closing section 
 --
 ## with precise final take away
@@ -40,8 +50,8 @@ precise final take away
 ---
 ## Scan me!
 
-![](http://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=https%3A%2F%2Fgithub.com%2Fbfh%2Freveal.js%2Fcontent%2Fdemo.md&qzone=0&margin=0&size=400x400&ecc=L)
+![](http://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=https%3A%2F%2Fgithub.com%2Fbfh%2Freveal.js%2Fblob%2Ftheme-bfh%2Fcontent%2Fdemo.md&qzone=0&margin=0&size=400x400&ecc=L)
 
-[Source](https://github.com/bfh/reveal.js/content/demo.md) licensed under CC-BY-4.0 
+[Source](https://github.com/bfh/reveal.js/blob/theme-bfh/content/demo.md) licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) 
 --
 ## Q&A
