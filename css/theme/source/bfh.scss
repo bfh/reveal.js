@@ -27,7 +27,7 @@ $headingFont: 'Signika Negative', Helvetica, sans-serif;
 $headingTextShadow: none; // none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none; // uppercase
-$headingFontWeight: 600;
+// $headingFontWeight: 600; - workaround for : https://github.com/bfh/reveal.js/issues/5
 $linkColor: #79a8cb;
 $linkColorHover: darken( $linkColor, 25% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
