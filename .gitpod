@@ -1,13 +1,19 @@
 # Command to start on workspace startup (optional)
 tasks:
   - name: Install & build bfh/reveal.js
-    init: npm install
+    init: npm install && npm install decktape
     command: npm start
 
   - name: Open Slides
     command: |
       gp ports await 8000
       gp preview $(gp url 8000)/bfh.html --external
+    openMode: split-right
+
+  - name: Convert to PDF
+    command: |
+      gp ports await 8000
+      decktape $(gp url 8000)/bfh.html slides.pdf
     openMode: split-right
 # Ports to expose on workspace startup (optional)
 ports:
