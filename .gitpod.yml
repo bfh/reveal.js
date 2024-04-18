@@ -1,6 +1,9 @@
 # Different base image for decktape usage
 image:
   file: .gitpod.Dockerfile
+# Ports to expose on workspace startup (optional)
+ports:
+  - port: 8000
 
 # Command to start on workspace startup (optional)
 tasks:
@@ -19,6 +22,3 @@ tasks:
       gp ports await 8000
       decktape $(gp url 8000)/bfh.html slides.pdf
     openMode: split-right
-# Ports to expose on workspace startup (optional)
-ports:
-  - port: 8000
