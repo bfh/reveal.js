@@ -1,7 +1,7 @@
 # Command to start on workspace startup (optional)
 tasks:
   - name: Install & build bfh/reveal.js
-    init: npm install && npm install decktape
+    init: npm install && npm install -g decktape
     command: npm start
 
   - name: Open Slides
