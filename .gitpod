@@ -8,6 +8,7 @@ tasks:
     command: |
       gp ports await 8000
       gp preview $(gp url 8000)/bfh.html --external
+    openMode: split-right
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
