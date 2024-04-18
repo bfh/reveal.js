@@ -1,3 +1,7 @@
+# Different base image for decktape usage
+image:
+  file: .gitpod.Dockerfile
+
 # Command to start on workspace startup (optional)
 tasks:
   - name: Install & build bfh/reveal.js
