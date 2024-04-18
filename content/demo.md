@@ -3,8 +3,8 @@
 Sub-Title
 
 Location & Date & Time
-
 --
+<!-- .element: data-background-color="SeaGreen" -->
 > bold opening statement / quote
 
 details and [link to author](https://en.wikipedia.org/wiki/Author)
