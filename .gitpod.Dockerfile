@@ -1,4 +1,4 @@
-// https://stackoverflow.com/questions/74239007/start-a-puppetter-in-gitpod
+# https://stackoverflow.com/questions/74239007/start-a-puppetter-in-gitpod
 FROM gitpod/workspace-full:latest
 
 USER root
