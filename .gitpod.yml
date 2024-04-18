@@ -4,6 +4,7 @@ image:
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
+    visibility: public
 
 # Command to start on workspace startup (optional)
 tasks:
