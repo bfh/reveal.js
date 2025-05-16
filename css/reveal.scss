@@ -39,6 +39,12 @@ html.reveal-full-page {
 	--r-overlay-gap: 5px;
 }
 
+@media screen and (max-width: 1024px), (max-height: 768px) {
+	.reveal-viewport {
+		--r-overlay-header-height: 26px;
+	}
+}
+
 // Force the presentation to cover the full viewport when we
 // enter fullscreen mode. Fixes sizing issues in Safari.
 .reveal-viewport:fullscreen {
@@ -1333,8 +1339,11 @@ $controlsArrowAngleActive: 36deg;
 	}
 	.slides section:hover,
 	.slides section.present {
-		outline: 10px solid rgba(150,150,150,0.4);
+		outline: 10px solid rgba(150,150,150,0.6);
 		outline-offset: 10px;
+	}
+	.slides section.present {
+		outline: 10px solid var(--r-link-color);
 	}
 	.slides section .fragment {
 		opacity: 1;
@@ -1444,7 +1453,8 @@ $controlsArrowAngleActive: 36deg;
 }
 
 .reveal [data-preview-image],
-.reveal [data-preview-video] {
+.reveal [data-preview-video],
+.reveal [data-preview-link]:not(a):not([data-preview-link=false]) {
 	cursor: zoom-in;
 }
 
@@ -1455,7 +1465,7 @@ $controlsArrowAngleActive: 36deg;
 	bottom: var(--r-overlay-margin);
 	left: var(--r-overlay-margin);
 	border-radius: min( var(--r-overlay-margin), 6px );
-	z-index: 1000;
+	z-index: 99;
 	background: rgba( 0, 0, 0, 0.95 );
 	backdrop-filter: blur( 10px );
 	transition: all 0.3s ease;
@@ -1491,7 +1501,7 @@ $controlsArrowAngleActive: 36deg;
 	justify-content: center;
 	min-width: var(--r-overlay-header-height);
 	min-height: var(--r-overlay-header-height);
-	padding: 0 10px;
+	padding: 0 calc(var(--r-overlay-header-height) / 4);
 	opacity: 1;
 	border-radius: 6px;
 	font-size: 18px;
@@ -1547,7 +1557,7 @@ $controlsArrowAngleActive: 36deg;
 }
 
 // Preview overlay
-.r-overlay-preview iframe {
+.r-overlay-preview .r-overlay-content iframe {
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
@@ -1564,8 +1574,8 @@ $controlsArrowAngleActive: 36deg;
 	visibility: visible;
 }
 
-.r-overlay-preview img,
-.r-overlay-preview video {
+.r-overlay-preview .r-overlay-content img,
+.r-overlay-preview .r-overlay-content video {
 	position: absolute;
 	max-width: 100%;
 	max-height: 100%;
@@ -1640,22 +1650,23 @@ $controlsArrowAngleActive: 36deg;
 	margin-top: 0;
 }
 
-.r-overlay-help-content table {
+/* Specificity battle with reveal.js theme table styles */
+.r-overlay-help .r-overlay-help-content table {
 	border: 1px solid #fff;
 	border-collapse: collapse;
 	font-size: 16px;
 	text-align: left;
 }
 
-.r-overlay-help-content table th,
-.r-overlay-help-content table td {
+.r-overlay-help .r-overlay-help-content table th,
+.r-overlay-help .r-overlay-help-content table td {
 	width: 240px;
 	padding: 14px;
 	border: 1px solid #fff;
 	vertical-align: middle;
 }
 
-.r-overlay-help-content table th {
+.r-overlay-help .r-overlay-help-content table th {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
