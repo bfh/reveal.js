@@ -38,7 +38,14 @@ precise final take away
 ---
 # Another section
 --
-## with details
+## A table
+
+| Header 1 | Header 2 | Header 3 |
+| :------- | :------: | -------: |
+| Cell A1  | Cell B1  | Cell C1  |
+| Cell A2  | Cell B2  | Cell C2  |
+| Cell A3  | Cell B3  | Cell C3  |
+| Cell A4  | Cell B4  | Cell C4  |
 --
 ## and arguments
 ---
