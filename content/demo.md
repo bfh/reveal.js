@@ -49,6 +49,42 @@ precise final take away
 --
 ## and arguments
 ---
+# Smart Slides - DE
+---
+### Fragestellung (Richtig/Falsch)?
+--
+### Fragestellung (Ja/Nein)?
+--
+### Fragestellung (Ja/Nein/Enthaltung)?
+--
+### freie Fragestellung mit vier Antwortmöglichkeiten?
+
+A) Antwort 1
+
+B) Antwort 2
+
+C) Antwort 3
+
+D) Antwort 4
+---
+# Smart Slides - DE
+---
+### Question (True/False)?
+--
+### Question (Yes/No)?
+--
+### Question (Yes/No/Abstention)?
+--
+### Question?
+
+A) Answer 1
+
+B) Answer 2
+
+C) Answer 3
+
+D) Answer 4
+---
 # Closing section 
 --
 ## with precise final take away
