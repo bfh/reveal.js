@@ -1,11 +1,13 @@
 /**
- * White theme for reveal.js. This is the opposite of the 'black' theme.
+ * BFH theme for reveal.js.
  *
- * By Hakim El Hattab, http://hakim.se
+ * By Markus Tiede, http://mtiede.de
+ *
+ * Re-generate CSS via : 'npm run build -- css-themes'
  */
 @import url(https://fonts.googleapis.com/css2?family=Signika+Negative);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
-  color: #e9eef1;
+  color: rgb(233.1369863014, 238.2328767123, 240.8630136986);
 }
 
 /*********************************************
@@ -18,13 +20,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-main-color: #567585;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Signika Negative, Helvetica, sans-serif;
+  --r-heading-font: Unit Rounded Pro, Signika Negative, Helvetica, sans-serif;
   --r-heading-color: #f3c23e;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: none;
   --r-heading-text-shadow: none;
-  --r-heading-font-weight: 600;
+  --r-heading-font-weight: none;
   --r-heading1-text-shadow: none;
   --r-heading1-size: 2.5em;
   --r-heading2-size: 1.6em;
@@ -32,10 +34,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading4-size: 1em;
   --r-code-font: monospace;
   --r-link-color: #79a8cb;
-  --r-link-color-dark: #4584b2;
-  --r-link-color-hover: #37698e;
-  --r-selection-background-color: #d5e4ef;
+  --r-link-color-dark: rgb(85.9870967742, 145.2677419355, 189.4129032258);
+  --r-link-color-hover: rgb(54.935483871, 104.5887096774, 141.564516129);
+  --r-selection-background-color: rgb(212.8548387097, 227.6370967742, 238.6451612903);
   --r-selection-color: #fff;
+  --r-overlay-element-bg-color: 240, 240, 240;
+  --r-overlay-element-fg-color: 0, 0, 0;
 }
 
 .reveal-viewport {
