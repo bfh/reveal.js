@@ -36,7 +36,7 @@ export const VERSION = '5.2.1';
  * https://revealjs.com
  * MIT licensed
  *
- * Copyright (C) 2011-2022 Hakim El Hattab, https://hakim.se
+ * Copyright (C) 2011-2026 Hakim El Hattab, https://hakim.se
  */
 export default function( revealElement, options ) {
 
@@ -1408,6 +1408,7 @@ export default function( revealElement, options ) {
 		}
 
 		if( slideChanged ) {
+			slideContent.afterSlideChanged();
 			dispatchSlideChanged( origin );
 		}
 
@@ -1501,6 +1502,8 @@ export default function( revealElement, options ) {
 
 		// Start or stop embedded content like videos and iframes
 		if( slideChanged ) {
+			slideContent.afterSlideChanged();
+
 			if( previousSlide ) {
 				slideContent.stopEmbeddedContent( previousSlide );
 				slideContent.stopEmbeddedContent( previousSlide.slideBackgroundElement );
@@ -1571,6 +1574,8 @@ export default function( revealElement, options ) {
 		if( overview.isActive() ) {
 			overview.layout();
 		}
+
+		dispatchEvent({ type: 'sync' });
 
 	}
 
@@ -2877,6 +2882,9 @@ export default function( revealElement, options ) {
 
 		getComputedSlideSize,
 		setCurrentScrollPage,
+
+		// Allows for manually removign slides prior to reveal.js initialization
+		removeHiddenSlides,
 
 		// Returns the current scale of the presentation content
 		getScale: () => scale,
